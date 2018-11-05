@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import fs from 'fs'
+const fs = require('fs');
 
 const covert = (str: string): string => {
     return str.replace(/-([a-z])/g, function (all, letter) {
@@ -35,6 +35,10 @@ const vueComponentBuild = (argv: any[]) => {
     if (filename && path) {
         let basepath = process.cwd() + "/";
         console.log(`当前创建的根路径:${basepath}`);
+        /** 根路径不存在 */
+        if (!fs.existsSync(basepath + path)) {
+            fs.mkdirSync(basepath + path);
+        }
         /** 组件文件夹不存在 */
         if (!fs.existsSync(basepath + path + filename)) {
             /** 创建文件夹 */

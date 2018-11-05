@@ -1,1 +1,1 @@
-{"version":3,"file":"index.js","sourceRoot":"/Users/zhushijie/Desktop/github/vue-component-build/src/","sources":["index.ts"],"names":[],"mappings":"AAAA,MAAM,CAAC,MAAM,CAAC,GAAG,CAAC,CAAC"}
+{"version":3,"file":"index.js","sourceRoot":"/Users/zhushijie/Desktop/github/vue-component-build/src/","sources":["index.ts"],"names":[],"mappings":";;AAEA,MAAM,iBAAiB,GAAG,CAAC,IAAW,EAAE,EAAE;IACtC,OAAO,CAAC,GAAG,CAAC,IAAI,CAAC,SAAS,CAAC,IAAI,CAAC,CAAC,CAAC;AACtC,CAAC,CAAA;AAED,iBAAiB,CAAC,OAAO,CAAC,IAAI,CAAC,KAAK,CAAC,CAAC,CAAC,CAAC,CAAC"}

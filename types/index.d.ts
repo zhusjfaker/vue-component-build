@@ -1,1 +1,1 @@
-export declare const a = 1;
+declare const vueComponentBuild: (argv: any[]) => void;

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-export const vueComponentBuild = (argv: any[]) => {
+const vueComponentBuild = (argv: any[]) => {
     console.log(JSON.stringify(argv));
 }
 

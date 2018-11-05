@@ -1,6 +1,6 @@
 {
     "name": "@zhusj/vue-component-build",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "vue auto build component like angular/cli feature",
     "main": "index.js",
     "scripts": {

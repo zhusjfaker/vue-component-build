@@ -15,13 +15,15 @@ const vueComponentBuild = (argv: any[]): void => {
     if (argv.length > 1) {
         if (argv[argv.findIndex(p => p == "--name") + 1]) {
             filename = argv[argv.findIndex(p => p == "--name") + 1];
+            console.log(`当前文件名: ${filename}`);
         }
         else {
             console.log(`--name 后没有文件姓名,参数无效`);
             return;
         }
         if (argv[argv.findIndex(p => p == "--path") + 1]) {
-            filename = argv[argv.findIndex(p => p == "--path") + 1];
+            path = argv[argv.findIndex(p => p == "--path") + 1];
+            console.log(`当前路径后缀: ${path}`);
         }
         else {
             console.log(`--path 后没有文件路径,参数无效`);

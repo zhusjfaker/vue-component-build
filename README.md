@@ -1,38 +1,21 @@
-# FormSerialization
-Typescript about comple-Object convert to formdata.
+# Vue-Component-build
+Vue is similar to angular/cli function automatic building component.
 
 ## 目的
-* 方便通过ng2内未提供复杂的formdata对象传递来提供简单的方法API.
-* 最新更新加入了对key值默认进行升序排列方便加签Md5请求
-* 最新更加加入了是否对字符串中"中文"值进行 URLENCODE 默认是true 可以改为false
+* 方便TS的小伙伴接收类似NG的功能开发VUE代码分离从而更容易排查错误(注意!!! 可能会舍弃vue一部分模板类型自检的功能跳过某些BUG!).
 
 
 ## 代码环境
-* 无
+* node 8.6 +
 
-## 文件结构
-* core.ts 核心操作类.
-* index.ts 核心工具类使用范例.
+## 安装
+* sudo npm install @zhusj/vue-component-build -g
 
 ## 使用教程
-<pre>
-<code>
-import { ObjectFormSerializable } from "./core"
+* 以下 "${****}" 为可替换部分
+* 在任意console路径下: vue-component --name ${you wanted to define Component Name} --path ${Relative path suffix of current path}
+* vue-component --name test --path ./src/component/  
+* 本版本提供以下简单创建方式
+* vue-component ${you wanted to define Component Name}
+* example: vue-component test (ps: path 默认是 ./src/components! 第一个参数为 组件名称 )
 
-const a = {
-    a: 1,
-    b: {
-        c: 123,
-        d: "dafd"
-    },
-    c: [1, 2, 3],
-    d: [
-        { oo: 123, hk: null },
-        { oo: 123, hk: null }
-    ]
-};
-
-let result = ObjectFormSerializable.Parse(a);
-console.log(result);
-</code>
-</pre>

@@ -1,0 +1,14 @@
+{
+    "name": "@zhusj/vue-component-build",
+    "version": "1.0.0",
+    "description": "vue auto build component like angular/cli feature",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "zhusj",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/node": "^10.12.2"
+    }
+}

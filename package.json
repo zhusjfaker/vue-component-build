@@ -1,6 +1,6 @@
 {
     "name": "@zhusj/vue-component-build",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "vue auto build component like angular/cli feature",
     "main": "index.js",
     "scripts": {
@@ -9,6 +9,10 @@
     "bin": {
         "vue-component": "./bin/index.js"
     },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/zhusjfaker/vue-component-build.git"
+    },
     "author": "zhusj",
     "license": "ISC",
     "devDependencies": {
@@ -16,5 +20,9 @@
     },
     "dependencies": {
         "fs": "0.0.1-security"
-    }
+    },
+    "bugs": {
+        "url": "https://github.com/zhusjfaker/vue-component-build/issues"
+    },
+    "homepage": "https://github.com/zhusjfaker/vue-component-build#readme"
 }

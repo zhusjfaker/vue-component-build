@@ -7,7 +7,7 @@ const covert = (str: string): string => {
     });
 }
 
-const vueComponentBuild = (argv: any[]) => {
+const vueComponentBuild = (argv: any[]): void => {
 
     console.log(`当前参数:${JSON.stringify(argv)}`);
     var filename, path;
@@ -18,14 +18,14 @@ const vueComponentBuild = (argv: any[]) => {
         }
         else {
             console.log(`--name 后没有文件姓名,参数无效`);
-            return false;
+            return;
         }
         if (argv[argv.findIndex(p => p == "--path") + 1]) {
             filename = argv[argv.findIndex(p => p == "--path") + 1];
         }
         else {
             console.log(`--path 后没有文件路径,参数无效`);
-            return false;
+            return;
         }
     }
     else {
@@ -96,6 +96,7 @@ export default class ${covert(filename)} extends Vue {
             throw new Error("该目录 " + basepath + path + filename + " 下已经存在同名组件");
         }
     }
+    return;
 }
 
 vueComponentBuild(process.argv.slice(2));
